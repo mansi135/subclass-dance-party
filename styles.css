@@ -2,6 +2,8 @@ body, html{
   height:100%;
 }
 body{
+  background: url('images/dancefloor.jpg');
+  background-size: 100%;
   margin: 0px;
   background-color:#444;
   font-size: 18px;
@@ -9,7 +11,7 @@ body{
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
-.title, .addDancerButton{
+.title, .addDancerButton, .addDancerButton1, .addDancerButton2{
   padding:5px 12px;
   float:right;
 }
@@ -24,4 +26,23 @@ body, a:link, a:visited, a:active{
   border:10px solid red;
   border-radius:10px;
   position:absolute;
+}
+
+.dancer1{
+  background: url('images/dancefloor.jpg');
+  border:30px solid green;
+  border-radius:30px;
+  position:absolute;
+}
+
+.dancer2{
+  border:10px solid blue;
+  border-radius:10px;
+  position:absolute;
+}
+
+.newStep{
+  border:10px solid green;
+  border-radius:10px;
+  position: absolute;
 }

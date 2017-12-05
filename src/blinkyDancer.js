@@ -19,7 +19,6 @@ var makeBlinkyDancer = function(top, left, timeBetweenSteps) {
 
 
   //this.oldStep = MakeDancer.prototype.step;
-  
   MakeDancer.call(this, top, left, timeBetweenSteps);
 
 
