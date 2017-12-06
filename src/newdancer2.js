@@ -16,5 +16,6 @@ MakeNewDancer2.prototype.step = function() {
     MakeDancer.prototype.step.call(this, this.timeBetweenSteps);
     this.$node.removeClass("dancer");
     this.$node.addClass("dancer2");
-    this.$node.toggle();
+    //this.$node.toggle();
+    this.$node.prepend('<img src="images/mickey.jpg" alt="mickey dancer" height="60" width="30">');
   };

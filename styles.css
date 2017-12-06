@@ -29,16 +29,19 @@ body, a:link, a:visited, a:active{
 }
 
 .dancer1{
-  background: url('images/dancefloor.jpg');
-  border:30px solid green;
-  border-radius:30px;
+  border:0px;
+  border-radius:5px;
   position:absolute;
+  animation-duration: 3s;
+  animation-name: slidein;
 }
 
 .dancer2{
-  border:10px solid blue;
+  border:0px;
   border-radius:10px;
   position:absolute;
+  animation-duration: 3s;
+  animation-name: infinite-spinning;
 }
 
 .newStep{
@@ -46,3 +49,27 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position: absolute;
 }
+
+@keyframes slidein {
+  from {
+  margin-left: 100%;
+  width: 50%;
+}
+
+  to {
+  margin-left: 0%;
+  width: 50%;
+
+  }
+}
+
+@keyframes infinite-spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
